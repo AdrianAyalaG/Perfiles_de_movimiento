@@ -47,7 +47,7 @@ Solución:
 
 $$a = \frac{0-10}{15-5} = -1 cm/s^{2}$$
 
-$$s = 25 + \frac{10*10}{2}$$
+$$s = 25 + \frac{10*10}{2}= 75 cm$$
 
 (Insertar la imagen de matlab)
 
@@ -78,3 +78,27 @@ $$L= v_{m}(t_{a}+t_{m})$$
 Y despejando de la ecuación anterior se puede conocer el tiempo de movimiento, que sería:
 
 $$t_{m}=\frac{L}{v_{m}}-t_{a}$$
+
+### 2.2.2 Perfil de velocidad trapezoidal Anlítico 
+
+(Insertar grafica) 
+(Poner ecuaciones analiticas) 
+
+## 💡Ejemplo 3:
+El eje x de un robot Gantry debe moverse 10 cm, La máxima aceleración permitida en este eje es de $$ 1cm/s^{2}$$. Si se desea mover el eje a una velocidad máxima de 2 cm/s, cuanto tiempo tomará hacer este movimiento.
+
+(Insertar imagen)
+
+$$t_{a}= t_{d}=\frac{2 cm/s}{\frac{2}{2}} = 2 s$$
+
+$$t_{m}= \frac{10 cm}{2 cm/s}-2 s = 3s$$
+
+$$t_{TOTAL}= 2s+3s+2s = 7s$$
+
+(Insertar trapezoidal que hare yo)
+
+# 📚 Ejercicios
+1. (Insertar grafico)
+
+   Dado el perfil de velocidad de la figura, calcule $$S_{A},S_{B},S_{C}$$ usando las reglas geométricas 
+
