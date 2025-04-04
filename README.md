@@ -119,3 +119,7 @@ $$t_{TOTAL}= 2s+3s+2s = 7s$$
 
      $$S_{C}= 21+\left[ 4(6)-\frac{1}{2}(-8)(6-5.5)^{2} \right]=22 cm$$
 
+Se confurma que con ambos métodos la posicion A será en 1 cm, la posición B en 21 cm y la posición c en 22 cm.
+
+
+
