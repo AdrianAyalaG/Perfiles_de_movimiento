@@ -98,7 +98,24 @@ $$t_{TOTAL}= 2s+3s+2s = 7s$$
 (Insertar trapezoidal que hare yo)
 
 # 📚 Ejercicios
-1. (Insertar grafico)
+1. Dado el perfil de velocidad de la figura, calcule $$S_{A},S_{B},S_{C}$$ usando las reglas geométricas y el método analítico del perfil del movimiento.
+ (Insertar grafico)
 
-   Dado el perfil de velocidad de la figura, calcule $$S_{A},S_{B},S_{C}$$ usando las reglas geométricas 
+   Solución:
+
+   * Método Geométrico
+     
+     $$S_{A}= \frac{(0.5)(4)}{2}+0 = 1cm$$
+     
+     $$S_{B}= 2\frac{(4)(5)}{2}+1 = 21cm$$
+     
+     $$S_{C}= \frac{(0.5)(4)}{2}+21 = 22cm$$
+
+   * Método analítico
+
+     $$S_{A}= \frac{1}{2}(8)(0.5)^{2}= 1cm$$
+
+     $$S_{B}= 1+4(5.5-0.5)= 21cm$$
+
+     $$S_{C}= 21+\left[ 4(6)-\frac{1}{2}(-8)(6-5.5)^{2} \right]=22 cm$$
 
