@@ -14,8 +14,13 @@ Estudia el comportamiento de la posición s(t), la velocidad v(t) y la aceleraci
 Mediante el análisis de las imágenes, se pueden deducir ecuaciones gobernadas por reglas geométricas.
 
 ## Reglas geométricas
-Hay que tener en cuenta que la trayectoria que se da por los tiempos del proceso. Así de forma muy general se obtienen las siguientes ecuaciones:
+La trayectoria del sistema depende de los tiempos de proceso, mientras que su perfil de movimiento se obtiene analizando la gráfica de velocidad (espacio/tiempo). A partir de esto, se establecen las siguientes ecuaciones: 
 
-$$v = v_{0}+ \color{Magenta} a \color{DarkBlue} (t- t_{0})$$
+$$v = v_{0}+ \color{Magenta} a \color{Yellow} (t- t_{0})$$
+
+* $$\color{Magenta} a$$ es la pendiente de la gráfica velocidad.
+* El perfil tiene varias etapas de proceso. por esa razón se tiene en cuenta $$t_{0}$$ . En alguna otra etapa este valor ya no será 0, y afecta el valor de velocidad obtenido.
+
+$$s= s_{0}+\frac{1}{2}\color{Red} (t-t_{0})\color{Cyan} (v_{0}+a(t-t_{0}))$$
 
 
