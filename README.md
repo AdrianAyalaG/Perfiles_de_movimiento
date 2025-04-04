@@ -14,13 +14,33 @@ Estudia el comportamiento de la posición s(t), la velocidad v(t) y la aceleraci
 Mediante el análisis de las imágenes, se pueden deducir ecuaciones gobernadas por reglas geométricas.
 
 ## Reglas geométricas
-La trayectoria del sistema depende de los tiempos de proceso, mientras que su perfil de movimiento se obtiene analizando la gráfica de velocidad (espacio/tiempo). A partir de esto, se establecen las siguientes ecuaciones: 
+La trayectoria del sistema depende de los tiempos de proceso, mientras que su perfil de movimiento se obtiene analizando el perfil de velocidad (espacio/tiempo). A partir de esto, se establecen las siguientes ecuaciones: 
 
 $$v = v_{0}+ \color{Magenta} a \color{Yellow} (t- t_{0})$$
 
-* $$\color{Magenta} a$$ es la pendiente de la gráfica velocidad.
+* $$\color{Magenta} a$$ es la pendiente del perfil de velocidad.
 * El perfil tiene varias etapas de proceso. por esa razón se tiene en cuenta $$t_{0}$$ . En alguna otra etapa este valor ya no será 0, y afecta el valor de velocidad obtenido.
 
 $$s= s_{0}+\frac{1}{2}\color{Red} (t-t_{0})\color{Cyan} (v_{0}+a(t-t_{0}))$$
 
+## 💡Ejemplo 1:
+Encontrar la posición y la aceleración en t= 5 segundos.
 
+(Insertar la imagen de las graficas)
+
+Solución:
+$$a =(10 in/s)/(5s) = 2 s^{2}$$
+
+Ahora para la posición 
+$$s = 0+\frac{1}{2}(5)(10) = 25 in$$
+
+En la anterior ecuación se puede apreciar como la posición es el área del triangulo que se forma en el perfil de velocidad. Y el area no es más que $$(base*altura)/2$$ y se suma por la posición inicial. En alguna otra etapa del proceso u otro proceso, este valor ya no será 0. 
+
+## 💡Ejemplo 2:
+Un eje está viajando a una velocidad de 10 cm/s. En t=5 s empieza a disminuir la velocidad como se ve en el perfil. Cual es la posición del eje cuando se detiene? Asuma que empieza a acelerar a 25 cm.
+
+(intertar imagen de las gráficas)
+
+Solución: 
+$$a = \frac{0-10}{15-5} = -1 cm/s^{2}$$
+$$s = 25 + \frac{10*10}{2}$$
