@@ -16,5 +16,6 @@ Mediante el análisis de las imágenes, se pueden deducir ecuaciones gobernadas 
 ## Reglas geométricas
 Hay que tener en cuenta que la trayectoria que se da por los tiempos del proceso. Así de forma muy general se obtienen las siguientes ecuaciones:
 
-$$v = v_{0}+\color{Magenta} a \color{Black} (t-t_{0})$$
+$$v = v_{0}+ \color{Magenta} a \color{DarkBlue} (t- t_{0})$$
+
 
