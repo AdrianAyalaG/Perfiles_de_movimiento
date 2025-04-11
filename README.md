@@ -1,6 +1,6 @@
 # Control de movimiento clase 20/03/25
 # Introducción
-En el ámbito del control de sistemas, los perfiles de movimiento son herramientas fundamentales para describir el desplazamiento de un mecanismo a lo largo del tiempo. Estos perfiles permiten analizar el recorrido total y los tiempos de trabajo en cada etapa del proceso, lo cual es esencial para garantizar precisión, eficiencia y un comportamiento predecible del sistema. Entre los tipos más comunes de perfiles se encuentran los lineales y los que presentan curvas en “S”, cada uno con sus propias ecuaciones para calcular parámetros como velocidad, posición, aceleración e incluso jerk —la derivada de la aceleración—, el cual puede provocar cambios bruscos que afectan a componentes como motores o actuadores.
+En el ámbito del control de sistemas, los perfiles de movimiento son herramientas fundamentales para describir el desplazamiento de un mecanismo a lo largo del tiempo. Estos perfiles permiten analizar el recorrido total y los tiempos de trabajo en cada etapa del proceso, lo cual es esencial para garantizar precisión, eficiencia y un comportamiento predecible del sistema. Entre los tipos más comunes de perfiles se encuentran los lineales y los que presentan curvas en “S”, cada uno con sus propias ecuaciones para calcular parámetros como velocidad, posición, aceleración e incluso jerk (la derivada de la aceleración), el cual puede provocar cambios bruscos que afectan a componentes como motores o actuadores.
 Estos perfiles pueden aplicarse tanto en sistemas de un solo eje como en configuraciones multieje. En el caso del movimiento multieje, se identifican tres modos de funcionamiento: movimiento en un solo eje, slew motion y movimiento interpolado. Cada uno responde a diferentes prioridades, ya sea maximizar la velocidad en un eje específico o sincronizar los tiempos de movimiento entre varios ejes. Esta clasificación permite adaptar el perfil a los requerimientos específicos del sistema, asegurando un desplazamiento preciso y eficiente.
 
 # 1. Perfiles de movimiento
@@ -83,7 +83,15 @@ $$t_{m}=\frac{L}{v_{m}}-t_{a}$$
 ### 2.2.2 Perfil de velocidad trapezoidal Anlítico 
 
 (Insertar grafica) 
-(Poner ecuaciones analiticas) 
+Según la grafica de velocidad, se tomarán unos intervalos para conocer cada punto con más exactitud, continuidad y suavidad:
+
+$$0<t<t_{a}$$
+
+Para este intervalo el tiempo, la velocidad y la posicion iniciales serán 0
+
+$$s(t)= \int_{0}^{t_{a}}= at dt$$
+
+
 
 ## 💡Ejemplo 3:
 El eje x de un robot Gantry debe moverse 10 cm, La máxima aceleración permitida en este eje es de $$ 1cm/s^{2}$$. Si se desea mover el eje a una velocidad máxima de 2 cm/s, cuanto tiempo tomará hacer este movimiento.
