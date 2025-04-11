@@ -85,7 +85,7 @@ $$t_{m}=\frac{L}{v_{m}}-t_{a}$$
 (Insertar grafica) 
 Según la grafica de velocidad, se tomarán unos intervalos para conocer cada punto con más exactitud, continuidad y suavidad:
 
-$$0<t<t_{a}$$
+$$0 < t < t_{a}$$
 
 Para este intervalo el tiempo, la velocidad y la posicion iniciales serán 0
 
