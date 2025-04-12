@@ -9,9 +9,21 @@ Como su nombre lo indica, es la trayectoria de la carga desde un punto A hasta u
 # 2. Cinemática
 Estudia el comportamiento de la posición s(t), la velocidad v(t) y la aceleración a(t) en función del tiempo. En un sistema de un solo eje s(t) describe la posición en cualquier instante, v(t) el cambio de posición respecto al tiempo (derivada de la posición) y a(t) define la variación de la velocidad en un lapso (derivada de la velocidad).Sin embargo, no basta con conocer únicamente las posiciones inicial (A) y final (B), sino que también es crucial analizar la trayectoria del sistema y cómo se lleva a cabo el movimiento, ya que esto determina la dinámica, eficiencia y suavidad del proceso.
 
-(imagen de matematicamente como son)
-(imagen de las curvas)
+* Matematicamente :
 
+$$\color{Orchid} v(t)=\frac{ds}{dt}$$
+
+$$\color{Yellow}  a(t)=\frac{dv}{dt}$$
+
+Ahora bien, si se desea analizar estas funciones de manera inversa, se realizarian por medio de integrales, como por ejemplo: 
+
+$$s = \int_{}^{} v(t)dt$$
+
+$$v = \int_{}^{} a(t)dt$$
+
+(mio 1)
+
+* Se puede inferir por medio de la anterior imagen que el perfil de movimiento de la posición con respecto al tiempo, tendrá un movimiento parabólico; El area bajo la curva del perfil de movimiento de la velocidad es el punto B (Punto final) del perfil de movimiento de posicion en ese instante de tiempo; Y, 
 Mediante el análisis de las imágenes, se pueden deducir ecuaciones gobernadas por reglas geométricas.
 
 ## 2.1 Reglas geométricas
@@ -27,7 +39,7 @@ $$s= s_{0}+\frac{1}{2}\color{Red} (t-t_{0})\color{Cyan} (v_{0}+a(t-t_{0}))$$
 ## 💡Ejemplo 1:
 Encontrar la posición y la aceleración en t= 5 segundos.
 
-(Insertar la imagen de las graficas)
+(C_1)
 
 Solución:
 
@@ -42,7 +54,7 @@ En la anterior ecuación se puede apreciar como la posición es el área del tri
 ## 💡Ejemplo 2:
 Un eje está viajando a una velocidad de 10 cm/s. En t=5 s empieza a disminuir la velocidad como se ve en el perfil. Cual es la posición del eje cuando se detiene? Asuma que empieza a acelerar a 25 cm.
 
-(intertar imagen de las gráficas)
+(C_2)
 
 Solución: 
 
@@ -50,17 +62,15 @@ $$a = \frac{0-10}{15-5} = -1 cm/s^{2}$$
 
 $$s = 25 + \frac{10*10}{2}= 75 cm$$
 
-(Insertar la imagen de matlab)
-
 ## 2.2 Perfiles de movimiento comunes
 
 En el diseño de perfiles de movimiento, los dos enfoques más comunes son el trapezoidal (ampliamente utilizado por su facilidad de análisis, basado en las ecuaciones geométricas mencionadas) y la curva S (sigmoidal o gaussiana). Mientras el perfil trapezoidal prioriza la rapidez, la curva S ofrece mayor suavidad a costa de un tiempo de recorrido ligeramente mayor. Sin embargo, un factor crítico en ambos casos es el jerk (cambio brusco de aceleración), representado matemáticamente como pulsos o deltas de Dirac. Este fenómeno genera fuerzas repentinas que pueden dañar componentes mecánicos, como los ejes de un motor, debido a tensiones o flexiones indeseadas. Por ello, los sistemas de control modernos permiten ajustar y minimizar el jerk, optimizando así la durabilidad y precisión del movimiento.
 
-(Insertar grafica)
+(C_3)
 
 ### 2.2.1 Perfil de velocidad trapezoidal Geométrico 
 
-(Insertar mi grafica) 
+(C_4) 
 
 Como se aprecia en la imagen, el modelo asume tiempos iguales para las fases de aceleración y desaceleración. No obstante, en aplicaciones reales esta simetría no siempre se cumple: existen sistemas que requieren una desaceleración más rápida por requisitos de seguridad, o una aceleración prolongada para alcanzar velocidades críticas. Estas variaciones responden a necesidades específicas de desempeño del sistema. 
 
@@ -80,9 +90,9 @@ Y despejando de la ecuación anterior se puede conocer el tiempo de movimiento, 
 
 $$t_{m}=\frac{L}{v_{m}}-t_{a}$$
 
-### 2.2.2 Perfil de velocidad trapezoidal Anlítico 
+### 2.2.2 Perfil de velocidad trapezoidal Analítico 
 
-(Insertar grafica) 
+(C_4) 
 Según la grafica de velocidad, se tomarán unos intervalos para conocer cada punto con más exactitud, continuidad y suavidad:
 
 $$0 < t < t_{a}$$
@@ -114,7 +124,7 @@ $$s(t_{a}+t_{m})+{\left[ V_{m}t - \frac{1}{2}a(t-(t_{a}+t_{m}))^{2} \right]}_{t_
 ## 💡Ejemplo 3:
 El eje x de un robot Gantry debe moverse 10 cm, La máxima aceleración permitida en este eje es de $$ 1cm/s^{2}$$. Si se desea mover el eje a una velocidad máxima de 2 cm/s, cuanto tiempo tomará hacer este movimiento.
 
-(Insertar imagen)
+(C_5)
 
 $$t_{a}= t_{d}=\frac{2 cm/s}{\frac{2}{2}} = 2 s$$
 
@@ -122,11 +132,13 @@ $$t_{m}= \frac{10 cm}{2 cm/s}-2 s = 3s$$
 
 $$t_{TOTAL}= 2s+3s+2s = 7s$$
 
-(Insertar trapezoidal que hare yo)
+(mio 2)
+
+En la imagen se pueden observar los tiempos de aceleración, movimiento y desaceleración correspondientes. 
 
 # 📚 Ejercicio 1
 Dado el perfil de velocidad de la figura, calcule $$S_{A},S_{B},S_{C}$$ usando las reglas geométricas y el método analítico del perfil del movimiento.
- (Insertar grafico)
+ (C_6)
 
    Solución:
 
@@ -144,7 +156,14 @@ Dado el perfil de velocidad de la figura, calcule $$S_{A},S_{B},S_{C}$$ usando l
 
      $$S_{B}= 1+4(5.5-0.5)= 21cm$$
 
-     $$S_{C}= 21+\left[ 4(6)-\frac{1}{2}(-8)(6-5.5)^{2} \right]=22 cm$$
+     $$S_{C}= 21+\left[4(6)-\frac{1}{2}(-8)(6-5.5)^{2} \right]=22 cm$$
 
-Se confurma que con ambos métodos la posicion A será en 1 cm, la posición B en 21 cm y la posición c en 22 cm.
+Se confirma que con ambos métodos la posicion A será en 1 cm, la posición B en 21 cm y la posición c en 22 cm.
+
+# 📚 Ejercicio 2
+
+# Conclusiones
+
+
+# Referencias
 
