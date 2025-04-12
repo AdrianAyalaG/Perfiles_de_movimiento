@@ -21,7 +21,10 @@ $$s = \int_{}^{} v(t)dt$$
 
 $$v = \int_{}^{} a(t)dt$$
 
-(mio 1)
+
+![Figura 1](mio1.png)
+
+Figura 1. Cinemática de la posición, la velocidad y la aceleración.
 
 * Se puede inferir por medio de la anterior imagen que el perfil de movimiento de la posición con respecto al tiempo, tendrá un movimiento parabólico; El area bajo la curva del perfil de movimiento de la velocidad es el punto B (Punto final) del perfil de movimiento de posicion en ese instante de tiempo; Y, 
 Mediante el análisis de las imágenes, se pueden deducir ecuaciones gobernadas por reglas geométricas.
@@ -39,7 +42,9 @@ $$s= s_{0}+\frac{1}{2}\color{Red} (t-t_{0})\color{Cyan} (v_{0}+a(t-t_{0}))$$
 ## 💡Ejemplo 1:
 Encontrar la posición y la aceleración en t= 5 segundos.
 
-(C_1)
+![Figura 2](C_1.png)
+
+Figura 2. Perfiles de movimiento Ejemplo 1.
 
 Solución:
 
@@ -54,7 +59,9 @@ En la anterior ecuación se puede apreciar como la posición es el área del tri
 ## 💡Ejemplo 2:
 Un eje está viajando a una velocidad de 10 cm/s. En t=5 s empieza a disminuir la velocidad como se ve en el perfil. Cual es la posición del eje cuando se detiene? Asuma que empieza a acelerar a 25 cm.
 
-(C_2)
+![Figura 3](C_2.png)
+
+Figura 3. Perfiles de movimiento Ejemplo 2.
 
 Solución: 
 
@@ -66,11 +73,15 @@ $$s = 25 + \frac{10*10}{2}= 75 cm$$
 
 En el diseño de perfiles de movimiento, los dos enfoques más comunes son el trapezoidal (ampliamente utilizado por su facilidad de análisis, basado en las ecuaciones geométricas mencionadas) y la curva S (sigmoidal o gaussiana). Mientras el perfil trapezoidal prioriza la rapidez, la curva S ofrece mayor suavidad a costa de un tiempo de recorrido ligeramente mayor. Sin embargo, un factor crítico en ambos casos es el jerk (cambio brusco de aceleración), representado matemáticamente como pulsos o deltas de Dirac. Este fenómeno genera fuerzas repentinas que pueden dañar componentes mecánicos, como los ejes de un motor, debido a tensiones o flexiones indeseadas. Por ello, los sistemas de control modernos permiten ajustar y minimizar el jerk, optimizando así la durabilidad y precisión del movimiento.
 
-(C_3)
+![Figura 4](C_3.png)
+
+Figura 4. Perfiles de movimiento comunes.
 
 ### 2.2.1 Perfil de velocidad trapezoidal Geométrico 
 
-(C_4) 
+![Figura 5](C_4.png)
+
+Figura 5. Perfil de velocidad trapezoidal.
 
 Como se aprecia en la imagen, el modelo asume tiempos iguales para las fases de aceleración y desaceleración. No obstante, en aplicaciones reales esta simetría no siempre se cumple: existen sistemas que requieren una desaceleración más rápida por requisitos de seguridad, o una aceleración prolongada para alcanzar velocidades críticas. Estas variaciones responden a necesidades específicas de desempeño del sistema. 
 
@@ -92,7 +103,10 @@ $$t_{m}=\frac{L}{v_{m}}-t_{a}$$
 
 ### 2.2.2 Perfil de velocidad trapezoidal Analítico 
 
-(C_4) 
+![Figura 6](C_4.png)
+
+Figura 6. Perfil de velocidad trapezoidal.
+
 Según la grafica de velocidad, se tomarán unos intervalos para conocer cada punto con más exactitud, continuidad y suavidad:
 
 $$0 < t < t_{a}$$
@@ -124,7 +138,9 @@ $$s(t_{a}+t_{m})+{\left[ V_{m}t - \frac{1}{2}a(t-(t_{a}+t_{m}))^{2} \right]}_{t_
 ## 💡Ejemplo 3:
 El eje x de un robot Gantry debe moverse 10 cm, La máxima aceleración permitida en este eje es de $$ 1cm/s^{2}$$. Si se desea mover el eje a una velocidad máxima de 2 cm/s, cuanto tiempo tomará hacer este movimiento.
 
-(C_5)
+![Figura 7](C_5.png)
+
+Figura 7. Robot Gantry.
 
 $$t_{a}= t_{d}=\frac{2 cm/s}{\frac{2}{2}} = 2 s$$
 
@@ -132,13 +148,18 @@ $$t_{m}= \frac{10 cm}{2 cm/s}-2 s = 3s$$
 
 $$t_{TOTAL}= 2s+3s+2s = 7s$$
 
-(mio 2)
+![Figura 8](mio2.png)
+
+Figura 8. Perfil de velocidad trapezoidal para Robot Gantry.
 
 En la imagen se pueden observar los tiempos de aceleración, movimiento y desaceleración correspondientes. 
 
 # 📚 Ejercicio 1
 Dado el perfil de velocidad de la figura, calcule $$S_{A},S_{B},S_{C}$$ usando las reglas geométricas y el método analítico del perfil del movimiento.
- (C_6)
+
+![Figura 9](C_6.png)
+
+Figura 9. Perfil de velocidad.
 
    Solución:
 
