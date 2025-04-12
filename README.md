@@ -105,7 +105,11 @@ $$s(t_{a})+V_{m}(t-t_{a})$$
 
 Para el siguiente tramo se tiene en cuenta vuelve a cambiar los valores iniciales:
 
+Intervalo: $$t_{a}+t_{m}\lt t\lt Ttotal$$
+
 $$s(t)= s(t_{a}+t_{m})+\int_{t_{a}+t_{m}}^{t}-a(t-(t_{a}+t_{m}))+V_{m} dt$$
+
+$$s(t_{a}+t_{m})+{\left[ V_{m}t - \frac{1}{2}a(t-(t_{a}+t_{m}))^{2} \right]}_{t_{a}+t_{m}}^{t}$$
 
 ## 💡Ejemplo 3:
 El eje x de un robot Gantry debe moverse 10 cm, La máxima aceleración permitida en este eje es de $$ 1cm/s^{2}$$. Si se desea mover el eje a una velocidad máxima de 2 cm/s, cuanto tiempo tomará hacer este movimiento.
@@ -120,8 +124,8 @@ $$t_{TOTAL}= 2s+3s+2s = 7s$$
 
 (Insertar trapezoidal que hare yo)
 
-# 📚 Ejercicios
-1. Dado el perfil de velocidad de la figura, calcule $$S_{A},S_{B},S_{C}$$ usando las reglas geométricas y el método analítico del perfil del movimiento.
+# 📚 Ejercicio 1
+Dado el perfil de velocidad de la figura, calcule $$S_{A},S_{B},S_{C}$$ usando las reglas geométricas y el método analítico del perfil del movimiento.
  (Insertar grafico)
 
    Solución:
@@ -145,7 +149,7 @@ $$t_{TOTAL}= 2s+3s+2s = 7s$$
 Se confurma que con ambos métodos la posicion A será en 1 cm, la posición B en 21 cm y la posición c en 22 cm.
 
 
-
+# 
 27 / 04 / 2025
 # Perfil de Movimiento - Parte 2 
 
@@ -348,7 +352,7 @@ $$t_{m} = \frac{L_{y}}{t_{m} + t_{a}} = \frac{12cm}{3.8 + 0.2} = 3 cm/s$$
 $$ {\color{Green} v_{y} = 3 cm/s}$$
 
 
-# 📚 Ejercicios
+# 📚 Ejercicio 2
 
 Considere la máquina de la figura. Si ambos ejes se mueven a una velocidad de 8 cm/s usando un perfil de velocidad trapezoidal con 𝑡𝑎 = 0,6 s, ¿Cuánto tiempo le tomará a cada eje completar el movimiento?
 
