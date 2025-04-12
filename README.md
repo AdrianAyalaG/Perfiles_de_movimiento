@@ -199,4 +199,5 @@ Los perfiles de movimiento sirven para observar y predecir el comportamiento de 
 
 # Referencias
 [1] Login aulas 2025. (s/f). Edu.co. Recuperado el 12 de abril de 2025, de https://aulas.ecci.edu.co/mod/resource/view.php?id=217550
+
 [2] J. Villagrá, V. Milanés, J. Pérez y T. de Pedro, "Control basado en PID inteligentes: aplicación al control de crucero de un vehículo a bajas velocidades," Revista Iberoamericana de Automática e Informática Industrial, vol. 7, no. 4, pp. 44–52, oct. 2010. Enlace. [Accedido: 12-abr-2025].​ 
