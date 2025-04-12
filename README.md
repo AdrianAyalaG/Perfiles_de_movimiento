@@ -91,7 +91,21 @@ Para este intervalo el tiempo, la velocidad y la posicion iniciales serán 0
 
 $$s(t)= \int_{0}^{t_{a}}= at dt$$
 
+$$s(t)= \frac{1}{2}a(t_{a})^{2}$$
 
+Para el siguiente tramo se tiene en cuenta que el tiempo inicial, la posiicion inicial y la velocidad inicial cambian debido a que es una nueva etapa en donde estos valores corresponden a la posición, tiempo y velocidad resultante de la anterior etapa de movimiento:
+
+$$t_{a} < t < (t_{a}+t_{m}$$
+
+Entonces: 
+
+$$s(t) = s(t_{a})+\int_{t_{a}}^{t} Vm dt$$
+
+$$s(t_{a})+V_{m}(t-t_{a})$$
+
+Para el siguiente tramo se tiene en cuenta vuelve a cambiar los valores iniciales:
+
+$$s(t)= s(t_{a}+t_{m})+\int_{t_{a}+t_{m}}^{t}-a(t-(t_{a}+t_{m}))+V_{m} dt$$
 
 ## 💡Ejemplo 3:
 El eje x de un robot Gantry debe moverse 10 cm, La máxima aceleración permitida en este eje es de $$ 1cm/s^{2}$$. Si se desea mover el eje a una velocidad máxima de 2 cm/s, cuanto tiempo tomará hacer este movimiento.
