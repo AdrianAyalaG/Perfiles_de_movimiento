@@ -136,13 +136,13 @@ $$s(t)= s(t_{a}+t_{m})+\int_{t_{a}+t_{m}}^{t}-a(t-(t_{a}+t_{m}))+V_{m} dt$$
 $$s(t_{a}+t_{m})+(V_{m}t - \frac{1}{2}a(t-(t_{a}+t_{m}))^{2})_{t_{a}+t_{m}}^{t}$$
 
 ## 💡Ejemplo 3:
-El eje x de un robot Gantry debe moverse 10 cm, La máxima aceleración permitida en este eje es de $$ 1cm/s^{2}$$. Si se desea mover el eje a una velocidad máxima de 2 cm/s, cuanto tiempo tomará hacer este movimiento.
+El eje x de un robot Gantry debe moverse 10 cm, La máxima aceleración permitida en este eje es de $$1cm/s^{2}$$. Si se desea mover el eje a una velocidad máxima de 2 cm/s, cuanto tiempo tomará hacer este movimiento.
 
 ![Figura 7](C_5.png)
 
 Figura 7. Robot Gantry.
 
-$$t_{a}= t_{d}=\frac{2 cm/s}{\frac{2}{2}} = 2 s$$
+$$t_{a}= t_{d}=\frac{2 cm/s}{1 cm/s^{2}} = 2 s$$
 
 $$t_{m}= \frac{10 cm}{2 cm/s}-2 s = 3s$$
 
@@ -182,13 +182,21 @@ Figura 9. Perfil de velocidad.
 Se confirma que con ambos métodos la posicion A será en 1 cm, la posición B en 21 cm y la posición c en 22 cm.
 
 # 📚 Ejercicio 2
-El eje z de un robot seguidor de linea debe moverse 500 cm o 0.5 metros, La máxima aceleración permitida en este eje es de $$200 m/s^{2}$$. Si se desea mover el eje a una velocidad máxima de 300 m/s, cuanto tiempo tomará hacer este movimiento.
+El eje z de un robot seguidor de linea debe moverse 500 m, La máxima aceleración permitida en este eje es de $$200 m/s^{2}$$. Si se desea mover el eje a una velocidad máxima de 300 m/s, cuanto tiempo tomará hacer este movimiento.
 
-$$t_{a}= t_{d}=\frac{300 m/s}{200 m/s^{2}} = 1.6 s$$
+$$t_{a}= t_{d}=\frac{300 m/s}{200 m/s^{2}} = 1.5 s$$
 
+$$t_{m}= \frac{500 m}{300 m/s}-1.6 s = 0.066 s$$
+
+*El ejercicio demuestra que en la industria hay sistemas en los que el tiempo de movimiento es casi nulo debido a los cambios/conmutaciones tan rápidas que este deba ahcer para cumplir su función. 
+
+![Figura 10](xd.png)
+
+Figura 10. Perfil de velocidad.
 
 # Conclusiones
-
+Los perfiles de movimiento sirven para observar y predecir el comportamiento de muchos sistemas industriales. Aunque pueden parecer complejos, es posible simplificarlos mediante ecuaciones geométricas o analíticas, establecidas a partir de perfiles generales o similares ya conocidos. Se puede evidenciar que existen sistemas que no son simétricos, por ejemplo, cuando el tiempo de aceleración y el tiempo de desaceleración son diferentes. Esto puede deberse a que un motor necesita reducir su velocidad más rápidamente para cumplir con una tarea específica, o a que un actuador debe alcanzar un punto de operación (setpoint) con mayor rapidez que la empleada para descender de él, dependiendo de la etapa del proceso en la que se encuentre. Se concluye que el análisis detallado de estos perfiles permite adaptar el comportamiento dinámico del sistema a las exigencias del proceso, optimizando tanto la eficiencia como la seguridad operativa. Asimismo, se concluye que el tiempo total de movimiento (Tm) variará en función del tipo de trabajo a realizar, ya que cada aplicación impone condiciones particulares de aceleración, velocidad y frenado. 
 
 # Referencias
-
+[1] Login aulas 2025. (s/f). Edu.co. Recuperado el 12 de abril de 2025, de https://aulas.ecci.edu.co/mod/resource/view.php?id=217550
+[2] J. Villagrá, V. Milanés, J. Pérez y T. de Pedro, "Control basado en PID inteligentes: aplicación al control de crucero de un vehículo a bajas velocidades," Revista Iberoamericana de Automática e Informática Industrial, vol. 7, no. 4, pp. 44–52, oct. 2010. Enlace. [Accedido: 12-abr-2025].​ 
