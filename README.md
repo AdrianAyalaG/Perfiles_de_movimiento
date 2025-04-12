@@ -184,9 +184,11 @@ Se confirma que con ambos métodos la posicion A será en 1 cm, la posición B e
 # 📚 Ejercicio 2
 El eje z de un robot seguidor de linea debe moverse 500 m, La máxima aceleración permitida en este eje es de $$200 m/s^{2}$$. Si se desea mover el eje a una velocidad máxima de 300 m/s, cuanto tiempo tomará hacer este movimiento.
 
-$$t_{a}= t_{d}=\frac{300 m/s}{200 m/s^{2}} = 1.5 s$$
+$$t_{a}= t_{d}=\frac{300 m/s}{200 m/s^{2}} = 1.6 s$$
 
 $$t_{m}= \frac{500 m}{300 m/s}-1.6 s = 0.066 s$$
+
+$$t_{TOTAL}= 1.6s+0.066s+1.6s = 3.26 s$$
 
 *El ejercicio demuestra que en la industria hay sistemas en los que el tiempo de movimiento es casi nulo debido a los cambios/conmutaciones tan rápidas que este deba ahcer para cumplir su función. 
 
