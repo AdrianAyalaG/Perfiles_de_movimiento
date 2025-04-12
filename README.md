@@ -376,7 +376,8 @@ $${\color{Green} ty_{total} = 1.9 + 2t_{a} = 2.5s} $$
 
 
 # Conclusiones
-- Implementar un perfil de movimiento con curva en S permite una transición más suave entre etapas, reduciendo las vibraciones, mejorando la precisión del posicionamiento y alargando la vida útil de los componentes mecánicos. Aunque su implementación puede requerir mayor complejidad.
+- Implementar un perfil de movimiento con curva en S permite una transición más suave entre etapas, reduciendo las vibraciones, mejorando la precisión del posicionamiento y alargando la vida útil de los componentes mecánicos. Aunque su implementación puede requerir mayor complejidad a nivel de calculos, por ende, más gasto computacional.
+- 
 
 
 # Referencias
