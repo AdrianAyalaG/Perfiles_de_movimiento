@@ -22,7 +22,7 @@ $$s = \int_{}^{} v(t)dt$$
 $$v = \int_{}^{} a(t)dt$$
 
 
-![Figura 1](mio1.png)
+![Figura 1](lol.png)
 
 Figura 1. Cinemática de la posición, la velocidad y la aceleración.
 
@@ -133,7 +133,7 @@ Intervalo: $$t_{a}+t_{m}\lt t\lt Ttotal$$
 
 $$s(t)= s(t_{a}+t_{m})+\int_{t_{a}+t_{m}}^{t}-a(t-(t_{a}+t_{m}))+V_{m} dt$$
 
-$$s(t_{a}+t_{m})+{\left[ V_{m}t - \frac{1}{2}a(t-(t_{a}+t_{m}))^{2} \right]}_{t_{a}+t_{m}}^{t}$$
+$$s(t_{a}+t_{m})+(V_{m}t - \frac{1}{2}a(t-(t_{a}+t_{m}))^{2})_{t_{a}+t_{m}}^{t}$$
 
 ## 💡Ejemplo 3:
 El eje x de un robot Gantry debe moverse 10 cm, La máxima aceleración permitida en este eje es de $$ 1cm/s^{2}$$. Si se desea mover el eje a una velocidad máxima de 2 cm/s, cuanto tiempo tomará hacer este movimiento.
@@ -182,6 +182,10 @@ Figura 9. Perfil de velocidad.
 Se confirma que con ambos métodos la posicion A será en 1 cm, la posición B en 21 cm y la posición c en 22 cm.
 
 # 📚 Ejercicio 2
+El eje z de un robot seguidor de linea debe moverse 500 cm o 0.5 metros, La máxima aceleración permitida en este eje es de $$200 m/s^{2}$$. Si se desea mover el eje a una velocidad máxima de 300 m/s, cuanto tiempo tomará hacer este movimiento.
+
+$$t_{a}= t_{d}=\frac{300 m/s}{200 m/s^{2}} = 1.6 s$$
+
 
 # Conclusiones
 
